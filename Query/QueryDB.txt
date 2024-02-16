@@ -1,0 +1,34 @@
+1) Creazione tabella
+
+CREATE TABLE Prodotti (
+    ID INT IDENTITY(1,1) PRIMARY KEY,
+    Nome VARCHAR(255),
+    Descrizione TEXT,
+    Prezzo DECIMAL(10, 2),
+    Immagine TEXT
+);
+
+
+2) inserimento dati
+INSERT INTO Prodotti (Nome, Descrizione, Prezzo, Immagine) VALUES
+('iPhone 13', 'Smartphone Apple con display OLED da 6.1 pollici, chip A15 Bionic, fotocamera dual 12MP, disponibile in diversi colori.', 999.99, 'https://www.trendevice.com/usato/immagini_front/650/iphone-13-galassia.png'),
+('Samsung Galaxy S21', 'Smartphone Samsung con display Dynamic AMOLED da 6.2 pollici, processore Exynos 2100, fotocamera triple 12MP, disponibile in diversi colori.', 899.99, 'https://images.samsung.com/is/image/samsung/p6pim/it/galaxy-s21/gallery/it-galaxy-s21-5g-g991-sm-g991bzvgeue-368946114?$650_519_PNG$'),
+('Sony PlayStation 5', 'Console di gioco di nuova generazione con supporto per grafica 4K, SSD ultra-veloce, controller DualSense innovativo.', 499.99, 'https://m.media-amazon.com/images/I/51UjxChW5fL._AC_UF894,1000_QL80_.jpg'),
+('MacBook Pro 16"', 'Laptop Apple con display Retina da 16 pollici, processore Intel Core i9, fino a 64GB di RAM, fino a 8TB di SSD.', 2399.99, 'https://support.apple.com/library/APPLE/APPLECARE_ALLGEOS/SP809/sp809mbp16touch-space-2019.jpeg'),
+('Dyson V11 Absolute', 'Aspirapolvere senza fili con motore digitale Dyson V11, adatto per diverse superfici, fino a 60 minuti di autonomia.', 599.99, 'https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/hero/446976-01.png?$responsive$&cropPathE=mobile&fit=stretch,1&wid=640'),
+('Samsung QLED TV 55"', 'TV Samsung QLED da 55 pollici con risoluzione 4K Ultra HD, processore Quantum 4K, tecnologia Ambient Mode+.', 1499.99, 'https://www.e-stayon.com/images/thumbs/0227169_samsung-series-7-qled-4k-55-q70c-tv-2023.jpeg'),
+('Canon EOS R5', 'Fotocamera mirrorless Canon con sensore CMOS da 45MP, registrazione video 8K, stabilizzazione dell\immagine.', 3899.99, 'https://www.juzaphoto.com/shared_files/recensioni/canon_eos_r5_1200px.jpg'),
+('Nintendo Switch', 'Console di gioco ibrida Nintendo con display da 6.2 pollici, modalità TV e portatile, controller Joy-Con inclusi.', 299.99, 'https://m.media-amazon.com/images/I/71r5EDssKdL._AC_UF894,1000_QL80_.jpg'),
+('Apple Watch Series 7', 'Smartwatch Apple con display sempre acceso, rilevamento dell\ossigeno nel sangue, monitoraggio dell\attività fisica.', 399.99, 'https://www.apple.com/newsroom/images/product/watch/standard/Apple_watch-series7_hero_09142021_big.jpg.large.jpg'),
+('Bose QuietComfort 45', 'Cuffie wireless con cancellazione attiva del rumore, fino a 24 ore di autonomia, compatibili con assistenti vocali.', 329.99, 'https://m.media-amazon.com/images/I/51T0Cy9TRJL._AC_UF1000,1000_QL80_.jpg'),
+('LG OLED TV 65"', 'TV LG OLED da 65 pollici con risoluzione 4K, processore α7 Gen4 AI, supporto per Dolby Vision IQ e Dolby Atmos.', 2699.99, 'https://www.lg.com/content/dam/channel/wcms/it/images/tv/oled65cx6la_api_eeis_it_c/gallery/lg-tv-OLED65CX6LA-D01.jpg'),
+('GoPro HERO10 Black', 'Action camera GoPro con sensore da 23MP, video 5.3K a 60fps, stabilizzazione HyperSmooth 4.0.', 499.99, 'https://static.gopro.com/assets/blta2b8522e5372af40/blt741c2a686796c4bf/61b7c3bf1bdbe25709ba76a9/GoPro_News_HERO10_Black.jpg'),
+('Microsoft Surface Laptop 4', 'Laptop Microsoft con display PixelSense da 13.5 pollici, processore Intel Core i5, fino a 32GB di RAM, fino a 1TB di SSD.', 1299.99, 'https://gfx3.senetic.com/akeneo-catalog/c/d/3/c/cd3ccaf531017ca99da2626a3080983ee1a977f6_1626672_5JI_00009_image1'),
+('Amazon Echo Dot (4th Gen)', 'Altoparlante intelligente con Alexa integrata, design a sfera, ideale per controllare dispositivi smart, ascoltare musica e molto altro.', 49.99, 'https://i.pcmag.com/imagery/reviews/04e3bEzJD7ng3WviIdH5URF-1..v1601313845.jpg'),
+('Fitbit Charge 5', 'Braccialetto fitness Fitbit con monitoraggio avanzato del battito cardiaco, monitoraggio del sonno, GPS integrato, fino a 7 giorni di autonomia.', 179.99, 'https://m.media-amazon.com/images/I/61ctIGVSJDL._AC_UF1000,1000_QL80_.jpg'),
+('Sony WH-1000XM4', 'Cuffie wireless con cancellazione attiva del rumore, fino a 30 ore di autonomia, tecnologia LDAC per una qualità audio superiore.', 349.99, 'https://www.sony.it/image/5d02da5df552836db894cead8a68f5f3?fmt=pjpeg&wid=330&bgcolor=FFFFFF&bgc=FFFFFF'),
+('Xbox Series X', 'Console di gioco di nuova generazione con supporto per grafica 4K, velocità di caricamento ultra-veloce, compatibile con giochi Xbox One.', 499.99, 'https://m.media-amazon.com/images/I/61CLCiCNtaL._AC_UF894,1000_QL80_.jpg'),
+('Google Pixel 6', 'Smartphone Google con display OLED da 6.4 pollici, processore Tensor, fotocamera dual 50MP, disponibile in diversi colori.', 699.99, 'https://media.wired.com/photos/616e0b46436c4f5f5e47d166/191:100/w_1280,c_limit/Gear-Google-Pixel-6-top.jpg'),
+('HP Envy 13"', 'Laptop HP con display Full HD da 13.3 pollici, processore Intel Core i7, fino a 16GB di RAM, fino a 1TB di SSD.', 899.99, 'https://files.refurbed.com/ii/hp-envy-13-ba-i5-1135g7-1673875821.jpg?t=fitdesign&h=600&w=800'),
+('Sonos Arc', 'Soundbar premium con Dolby Atmos integrato, audio di alta qualità per film, musica e giochi, controllo vocale tramite assistenti.', 799.99, 'https://media.sonos.com/images/znqtjj88/production/3e9dba9d67d6d8c68abe72461a1eaafe6a6f0b65-3000x1042.png?w=3840&q=100&fit=clip&auto=format');
+
