@@ -24,7 +24,7 @@
                         <a class="nav-link active" aria-current="page" href="Home.aspx">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Carrello.aspx">Carrello</a>
+                        <a class="nav-link" href="Carrello.aspx">🛒</a>
                     </li>
                 </ul>
             </div>

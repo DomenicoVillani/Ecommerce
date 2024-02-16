@@ -29,13 +29,13 @@ namespace Ecommerce
                                          <div>
                                         <img src=""{dataReader["Immagine"]}"" class=""card-img-top"" alt=""{dataReader["Nome"]}"">
                                         <div class=""card-body "">
-                                        <h5 class=""card-title"">{dataReader["Nome"]}</h5>
+                                        <h5 class=""card-title fw-semibold"">{dataReader["Nome"]}</h5>
                                         <p class=""card-text"">{dataReader["Descrizione"]}</p>
                                         </div>
                                         </div>
                                         <div class=""border-top d-flex justify-content-around align-items-baseline p-3"">
-                                        <p class=""card-text me-2"">{dataReader["Prezzo"]}€</p>
-                                        <a href=""Dettaglio.aspx?product={dataReader["ID"]}"" class=""btn btn-primary"">Dettaglio</a>
+                                        <p class=""card-text me-2 fw-bold"">{dataReader["Prezzo"]}€</p>
+                                        <a href=""Dettaglio.aspx?product={dataReader["ID"]}"" class=""btn btn-success"">Dettaglio</a>
                                         </div>
                                         </div>
                                         </div> ";

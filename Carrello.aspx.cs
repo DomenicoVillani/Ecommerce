@@ -36,12 +36,16 @@ namespace Ecommerce
                         if (dataReader.HasRows)
                         {
                             dataReader.Read();
-                            content += $@"<li class=""d-flex justify-content-evenly align-items-baseline"">
-                                        <p class=""fw-bold"">{dataReader["Nome"]}</p>
+                            content += $@"<div class=""d-flex justify-content-center"">
+                                        <li class=""d-flex justify-content-between align-items-baseline w-50"">
+                                        <div>
+                                            <p class=""fw-bold"">{dataReader["Nome"]}</p>
+                                        </div>
                                         <div class=""d-flex align-items-baseline"">
                                             <p class=""fw-bold"">{dataReader["Prezzo"]}€</p>
                                         </div> 
-                                    </li>";
+                                        </li>
+                                        </div>";
                             PrezzoTotale += double.Parse(dataReader["Prezzo"].ToString());
                         }
                     }
@@ -60,6 +64,12 @@ namespace Ecommerce
                 htmlContent.InnerHtml = content;
                 txtTotale.InnerHtml = "Totale Carrello: " + PrezzoTotale.ToString() + "€";
             }
+        }
+        protected void CancellaTuttiProdotti(object sender, EventArgs e)
+        {
+            Session.Clear();
+            txtTotale.InnerText = "Totale Carrello: 0€";
+            Page_Load(sender, e);
         }
     }
 }
