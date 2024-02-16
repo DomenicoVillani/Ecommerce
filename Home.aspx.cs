@@ -29,7 +29,7 @@ namespace Ecommerce
                                          <div>
                                         <img src=""{dataReader["Immagine"]}"" class=""card-img-top"" alt=""{dataReader["Nome"]}"">
                                         <div class=""card-body "">
-                                        <h5 class=""card-title fw-semibold"">{dataReader["Nome"]}</h5>
+                                        <h5 class=""card-title fw-bold"">{dataReader["Nome"]}</h5>
                                         <p class=""card-text"">{dataReader["Descrizione"]}</p>
                                         </div>
                                         </div>
